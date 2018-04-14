@@ -1,0 +1,27 @@
+// Import Fuse main library
+@import "app/core/scss/core";
+
+.nav .nav-item .nav-link.active{
+    background-color: #fff!important;
+    border-color: #3a60fc!important;
+    color: black;
+}
+
+.mat-fuse-dark-500-bg {
+    background-color: #fff !important;
+    color:black!important;
+}
+.nav-link-icon {
+    color: black!important;
+}
+.nav-link.active .mat-icon{
+    color: #3a60fc!important;
+}
+.mat-icon{
+    color: black!important;
+    font-size: 20px!important;
+}
+
+.mat-raised-button.mat-primary, .mat-fab.mat-primary, .mat-mini-fab.mat-primary {
+    background-color: #3a60fc!important;
+}

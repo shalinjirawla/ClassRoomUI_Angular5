@@ -1,0 +1,177 @@
+<div fxlayout="row" fxlayoutalign="start" id="login" style="flex-direction: row; box-sizing: border-box; display: flex; max-height: 100%; place-content: stretch flex-start; align-items: stretch;">
+
+    <div fxFlex fxhide fxshow.gt-xs id="login-intro" style="flex: 1 1 1e-09px; box-sizing: border-box; display: block;">
+
+        <!---->
+        <div class="logo" >
+            <img  src="assets/images/logos/fuse.svg">
+        </div>
+
+        <!---->
+        <div class="title ng-tns-c71-361 ng-trigger ng-trigger-animate ng-star-inserted" style="">
+            Welcome to the FUSE!
+        </div>
+
+    </div>
+
+    <!---->
+    <div fuseperfectscrollbar="" id="login-form-wrapper">
+
+        <div id="login-form">
+
+            <div class="logo" fxhide.gt-xs="" style="display: none;">
+                <span >F</span>
+            </div>
+
+            <div class="title">LOGIN TO YOUR ACCOUNT</div>
+
+            <form [formGroup]="loginForm" novalidate="">
+
+                <mat-form-field >
+                    <div class="mat-input-wrapper mat-form-field-wrapper">
+                        <div class="mat-input-flex mat-form-field-flex">
+                            <!---->
+                            <div class="mat-input-infix mat-form-field-infix">
+                                <input  class="mat-input-element mat-form-field-autofill-control ng-tns-c71-361 ng-untouched ng-pristine ng-invalid"
+                                    formcontrolname="email" matinput="" placeholder="Email" id="mat-input-44" aria-invalid="false"
+                                    aria-required="false">
+
+
+                                <span class="mat-form-field-label-wrapper mat-input-placeholder-wrapper mat-form-field-placeholder-wrapper">
+                                    <!---->
+                                    <label class="mat-form-field-label mat-input-placeholder mat-form-field-placeholder ng-tns-c18-362 mat-empty mat-form-field-empty ng-star-inserted"
+                                        for="mat-input-44" aria-owns="mat-input-44" style="">
+                                        <!---->
+                                        <!---->Email
+                                        <!---->
+                                        <!---->
+                                    </label>
+                                </span>
+                            </div>
+                            <!---->
+                        </div>
+                        <div class="mat-input-underline mat-form-field-underline">
+                            <span class="mat-input-ripple mat-form-field-ripple"></span>
+                        </div>
+                        <div class="mat-input-subscript-wrapper mat-form-field-subscript-wrapper">
+                            <!---->
+                            <!---->
+                            <div class="mat-input-hint-wrapper mat-form-field-hint-wrapper ng-tns-c18-362 ng-trigger ng-trigger-transitionMessages ng-star-inserted"
+                                style="opacity: 1; transform: translateY(0%);">
+                                <!---->
+                                <div class="mat-input-hint-spacer mat-form-field-hint-spacer"></div>
+                            </div>
+                        </div>
+                    </div>
+                </mat-form-field>
+
+                <mat-form-field class="mat-input-container mat-form-field mat-primary mat-form-field-type-mat-input mat-form-field-can-float mat-form-field-hide-placeholder">
+                    <div class="mat-input-wrapper mat-form-field-wrapper">
+                        <div class="mat-input-flex mat-form-field-flex">
+                            
+                            <div class="mat-input-infix mat-form-field-infix">
+                                <input class="mat-input-element mat-form-field-autofill-control" matinput placeholder="Password" type="password" id="mat-input-45">
+
+                                <span class="mat-form-field-label-wrapper mat-input-placeholder-wrapper mat-form-field-placeholder-wrapper">          
+                                    <label class="mat-form-field-label mat-input-placeholder mat-form-field-placeholder">
+                                        <!---->
+                                        <!---->Password
+                                        <!---->
+                                        <!---->
+                                    </label>
+                                </span>
+                            </div>
+                            
+                        </div>
+                        <div class="mat-input-underline mat-form-field-underline">
+                            <span class="mat-input-ripple mat-form-field-ripple"></span>
+                        </div>
+                        <div class="mat-input-subscript-wrapper mat-form-field-subscript-wrapper">
+                            <!---->
+                            <!---->
+                            <div class="mat-input-hint-wrapper mat-form-field-hint-wrapper"
+                                style="opacity: 1; transform: translateY(0%);">
+                                <!---->
+                                <div class="mat-input-hint-spacer mat-form-field-hint-spacer"></div>
+                            </div>
+                        </div>
+                    </div>
+                </mat-form-field>
+
+                <div  class="remember-forgot-password" fxlayout="row" fxlayout.xs="column" fxlayoutalign="space-between center"
+                    style="flex-direction: row; box-sizing: border-box; display: flex; max-height: 100%; place-content: center space-between; align-items: center;">
+                    <mat-checkbox  class="remember-me mat-checkbox mat-accent" aria-label="Remember Me" id="mat-checkbox-111">
+                        <label class="mat-checkbox-layout" for="mat-checkbox-111-input">
+                            <div class="mat-checkbox-inner-container">
+                                <input class="mat-checkbox-input cdk-visually-hidden" type="checkbox" id="mat-checkbox-111-input"
+                                    tabindex="0" aria-label="Remember Me" aria-checked="false">
+                                <div class="mat-checkbox-ripple mat-ripple" matripple></div>
+                                <div class="mat-checkbox-frame"></div>
+                                <div class="mat-checkbox-background">
+                                    <svg xml:space="preserve" class="mat-checkbox-checkmark" focusable="false" version="1.1"
+                                        viewBox="0 0 24 24">
+                                        <path class="mat-checkbox-checkmark-path" d="M4.1,12.7 9,17.6 20.3,6.3" fill="none" stroke="white"></path>
+                                    </svg>
+                                    <div class="mat-checkbox-mixedmark"></div>
+                                </div>
+                            </div>
+                            <span class="mat-checkbox-label">
+                                <span style="display:none">&nbsp;</span>
+                                Remember Me
+                            </span>
+                        </label>
+                    </mat-checkbox>
+
+                    <a  class="forgot-password">
+                        Forgot Password?
+                    </a>
+                </div>
+
+                <button  class="submit-button mat-raised-button mat-accent" aria-label="LOGIN" color="accent" mat-raised-button=""
+                    disabled="">
+                    <span class="mat-button-wrapper">
+                        LOGIN
+                    </span>
+                    <div class="mat-button-ripple mat-ripple" matripple=""></div>
+                    <div class="mat-button-focus-overlay"></div>
+                </button>
+
+            </form>
+
+            <div  class="separator">
+                <span  class="text">OR</span>
+            </div>
+
+            <div   fxlayout="column" fxlayoutalign="start center" style="flex-direction: column; box-sizing: border-box; display: flex; max-width: 100%; place-content: center flex-start; align-items: center;">
+
+                <button  class="google mat-raised-button" mat-raised-button="">
+                    <span class="mat-button-wrapper">
+                        Log in with Google
+                    </span>
+                    <div class="mat-button-ripple mat-ripple" matripple=""></div>
+                    <div class="mat-button-focus-overlay"></div>
+                </button>
+
+                <button class="facebook mat-raised-button" mat-raised-button>
+                    <span class="mat-button-wrapper">
+                        Log in with Facebook
+                    </span>
+                    <div class="mat-button-ripple mat-ripple" matripple=""></div>
+                    <div class="mat-button-focus-overlay"></div>
+                </button>
+
+            </div>
+
+            <div class="register" fxlayout="column" fxlayoutalign="center center" style="flex-direction: column; box-sizing: border-box; display: flex; max-width: 100%; place-content: center; align-items: center;">
+                <span class="text">Don't have an account?</span>
+                <a class="link">Create an account</a>
+            </div>
+        </div>
+        <div class="ps__rail-x" style="left: 0px; bottom: 0px;">
+            <div class="ps__thumb-x" tabindex="0" style="left: 0px; width: 0px;"></div>
+        </div>
+        <div class="ps__rail-y" style="top: 0px; height: 647px; right: 0px;">
+            <div class="ps__thumb-y" tabindex="0" style="top: 0px; height: 588px;"></div>
+        </div>
+    </div>
+</div>
